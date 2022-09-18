@@ -58,7 +58,7 @@ mean_and_std <- (grepl("activityID", colNames) |
 # Performing a subset to continue the analysis:
 setMeanandstd <- completedataset[ , mean_and_std == TRUE]
 
-# Uses descriptive activity names to name the activities in the data set.
+# 3. Uses descriptive activity names to name the activities in the data set.
 
 setwithActivityNames <- merge(setMeanandstd, activitylabels,
                               by = "activityID",
